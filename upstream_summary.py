@@ -15,7 +15,7 @@ import datetime
 import pandas as pd
 import re
 #Snowflake Cortext
-from snowflake.cortex import Complete, ExtractAnswer, Sentiment, Summarize, Translate, ClassifyText
+from snowflake.cortex import Complete, Summarize
 # If there are any certificates issues, run the command: /Applications/Python\ 3.9/Install\ Certificates.command
 
 
@@ -72,3 +72,7 @@ df_summary = df_combined.with_column(
         )
     )
 )
+
+# Select the output columns and show the results
+df_result = df_summary.select("PUBLICATION_NUMBER", "SUMMARY", "TITLE__ENGLISH_", "ABSTRACT__ENGLISH_", "CLAIMS__ENGLISH_")
+df_result.show()

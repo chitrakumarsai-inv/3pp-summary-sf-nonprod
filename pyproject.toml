@@ -1,0 +1,19 @@
+[project]
+name = "3pp-summary-sf-nonprod"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "feature-engine>=1.8.3",
+    "ipykernel>=6.29.5",
+    "openpyxl>=3.1.5",
+    "pandas>=2.2.3",
+    "python-dotenv>=1.1.0",
+    "scikit-learn>=1.5.2",
+    "skimpy>=0.0.15",
+    "snowflake>=1.2.0",
+    "snowflake-ml-python>=1.8.1",
+    "snowflake-snowpark-python[pandas]>=1.30.0",
+    "ydata-profiling>=4.16.1",
+]
